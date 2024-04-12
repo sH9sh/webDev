@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    height:450px;
+    
+}
+
+.heading{
+    text-shadow: -2px -2px 5px rgba(7, 7, 14, 0.817);
+}
+    
+
+.footer{
+    text-decoration: none;
+    font-size: 30px;
+    color:#C13E69;
+    margin: 20px;
+    padding-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+
+.footer:hover{
+    text-decoration: underline;
+}
+ 
+
+.banner{
+    background-image: url('../images/croagh_patrick.jpg');
+    min-height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+    color:#F2960D;
+
+    text-align: center;
+
+    text-shadow: -2px -2px 5px rgba(7, 7, 14, 0.817);
+    
+    
+}
+
+
+.a{
+    font: 50px red;
+}
+
+
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.nav-item{
+    text-decoration: none;
+    margin:auto;
+    color: #8e6108;
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+}
+
+.nav-item:hover{
+    background-color: #222b25;
+}
+
+nav{
+    background-color: #3EC196;
+}
+
+.nav-active{
+    background-color:darkslategrey;
+}
+
+.about-div{
+    height:600px;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+.p{
+    padding-top: 5px;
+}
+
+.inner-about-div{
+    height: 90%;
+    width: 60%;
+    border: 3px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #960DF2;
+    float: left;
+    background-color: bisque;
+    
+    
+    margin-left: 10px;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    
+
+}
+
+
+
+/* Things To Do page */
+
+#things_to_do_div{
+    width: 65%;
+    padding-left: 40px;
+}
+
+
+.picture-div{
+    height: 245px;
+    width: 165px;
+    
+    
+    background-size: cover;
+    background-repeat: no repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.hiker-image:active {
+    transition: all 1s;
+    transition-timing-function: linear;
+    transform: translateX(200px);
+}
+
+/* History page */
+.o-container{
+    width: 450px;
+    height: 60%;
+    position:relative;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #960DF2;
+    
+    
+}
+
+.o-image {
+    
+    width: 100%;
+    height: 100%;
+   
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.90);
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    opacity: 0;
+    transition: ease-in-out 3s;
+}
+
+.o-text{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    margin: 15px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.o-container:hover .overlay{
+    opacity: 0.8;
+}
+
+/* Events page */
+  
+.events-div{
+    height:600px;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content:left;
+    background-image: url(../images/westport-town.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.inner-events-div{
+    height: 90%;
+    width: 50%;
+    border: 3px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #960DF2;
+    float: left;
+    background-color: bisque;
+
+    margin-left: 10px;
+    padding: 10px 10px 10px 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font: #3EC196 bold;
+}
+
+/* Home page */
+
+.img{
+    width: 100%;
+}
+
+.div-container{
+    height: 400px;
+    background-image: url('../images/istockphoto-1151367251-612x612.jpg');
+    position: relative;
+    display: flex;
+    margin: 10px;
+}
+
+.image-container{
+    height: 180px;
+    width: 25%;
+    display: flex;
+    
+
+    position: relative;
+
+    animation-name: postcard-box;   
+    animation-duration: 10s;        
+    animation-timing-function:linear;  
+    animation-iteration-count: 3;     
+    animation-delay: 1s;                  
+    animation-direction:alternate-reverse;  
+    animation-fill-mode: none;     
+    animation-play-state:paused;    
+   
+}
+
+.div-container:hover .image-container{
+    animation-play-state: running;
+}
+
+@keyframes postcard-box{
+    
+    0%{
+        top: 0;
+        left:0;
+        rotate: 80deg;
+        }
+    25%{
+        top: 0;
+        left: 200px;
+        rotate: -80deg;
+    }
+    50%{
+        top: 125px;
+        left: 200px;
+        rotate: 80deg;
+        
+    }
+    75%{
+        top: 125px;
+        left: 0;
+        rotate: -80deg;
+       }
+    100%{
+        top: 0;
+        left:0;
+        }
+}
+
+.image-1{
+    background-image: url('../images/clewbay.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+
+    animation-name: image1-box;
+
+    animation-duration: 10s;        
+    animation-timing-function:linear;  
+    animation-iteration-count: 3;     
+    animation-delay: 1s;                  
+    animation-direction: normal;
+    animation-fill-mode: none;     
+    animation-play-state:paused;  
+    
+}
+
+@keyframes image1-box{
+    0%{
+        top: 0;
+        left:0;
+        rotate: 45deg;
+        }
+    25%{
+        top: 200px;
+        left: 200px;
+        rotate: -45deg;
+    }
+    50%{
+        top: 200px;
+        left: 0;
+        rotate: 45deg;
+        
+    }
+    75%{
+        top: 200px;
+        left: 200px;
+        rotate: -45deg;
+       }
+    100%{
+        top: 0;
+        left:0;
+        }
+}
+
+.image-2{
+    background-image: url('../images/beach.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+    
+}
+
+.image-3{
+    background-image: url('../images/westport_clock_tower.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+
+    animation-name: image3-box;
+
+    animation-duration: 10s;        
+    animation-timing-function:linear;  
+    animation-iteration-count: 3;     
+    animation-delay: 1s;                  
+    animation-direction: normal;
+    animation-fill-mode: none;     
+    animation-play-state:paused;    
+   
+   
+    
+}
+
+@keyframes image3-box{
+    0%{
+        top: 200px;
+        left:0;
+        rotate: 45deg;
+        }
+    25%{
+        top: 0;
+        left: 0;
+        rotate: -45deg;
+    }
+    50%{
+        top: 0px;
+        left: 200px;
+        rotate: 45deg;
+        
+    }
+    75%{
+        top: 200px;
+        left: 200px;
+        rotate: -45deg;
+       }
+    100%{
+        top: 0;
+        left:0;
+        }
+}
+
+.image-4{
+    background-image: url('../images/westportHouse.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+    
+}
